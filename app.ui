@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>964</width>
+    <height>662</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_4">
+     <property name="macros" stdset="0">
+      <string>{&quot;SRC&quot;: &quot;Main&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>zero.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_2">
+     <property name="macros" stdset="0">
+      <string>{&quot;SRC&quot;:&quot;Main&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mid/first.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater">
+     <property name="countShownInDesigner" stdset="0">
+      <number>2</number>
+     </property>
+     <property name="templateFilename" stdset="0">
+      <string>mid/first.ui</string>
+     </property>
+     <property name="dataSource" stdset="0">
+      <string>mid/first.json</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_4">
+     <property name="countShownInDesigner" stdset="0">
+      <number>2</number>
+     </property>
+     <property name="templateFilename" stdset="0">
+      <string>zero.ui</string>
+     </property>
+     <property name="dataSource" stdset="0">
+      <string>zero.json</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_3">
+     <property name="macros" stdset="0">
+      <string>{&quot;SRC&quot;:&quot;Main&quot;, &quot;INITIATOR&quot;:&quot;Main&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mid/leaf/third.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_2">
+     <property name="countShownInDesigner" stdset="0">
+      <number>2</number>
+     </property>
+     <property name="templateFilename" stdset="0">
+      <string>mid/second.ui</string>
+     </property>
+     <property name="dataSource" stdset="0">
+      <string>mid/second.json</string>
+     </property>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_3">
+     <property name="countShownInDesigner" stdset="0">
+      <number>2</number>
+     </property>
+     <property name="templateFilename" stdset="0">
+      <string>mid/leaf/third.ui</string>
+     </property>
+     <property name="dataSource" stdset="0">
+      <string>mid/leaf/third.json</string>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+     <property name="macros" stdset="0">
+      <string>{&quot;INITIATOR&quot;:&quot;Main&quot;}</string>
+     </property>
+     <property name="filename" stdset="0">
+      <string>mid/second.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="2">
+    <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_5">
+     <property name="filename" stdset="0">
+      <string>mid/second_tmpl.ui</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="PyDMTemplateRepeater" name="PyDMTemplateRepeater_5">
+     <property name="countShownInDesigner" stdset="0">
+      <number>2</number>
+     </property>
+     <property name="templateFilename" stdset="0">
+      <string>mid/second_tmpl.ui</string>
+     </property>
+     <property name="dataSource" stdset="0">
+      <string>mid/leaf/third.json</string>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMTemplateRepeater</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.template_repeater</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
